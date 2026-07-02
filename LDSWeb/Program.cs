@@ -18,11 +18,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Dashboard}/{action=dashboard}/{id?}");
-
 app.UseAuthorization();
+
+app.MapGet("/", () => Results.Redirect("~/Login"));
+
+app.MapRazorPages();
 
 app.MapRazorPages();
 

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/style.css">
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   
 
     <!-- Bootstrap (if using Bootstrap) -->
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <nav class="sidebar-nav">
-                <a href="~/Dashboard" class="active"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+                <a href="~/Index" class="active"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
                 <a href="profile.html" class=""><i class="bi bi-person-circle"></i> My Profile</a>
                 <a href="create-user.html" class=""><i class="bi bi-person-plus-fill"></i> Create User</a>
                 <a href="user-list.html" class=""><i class="bi bi-people-fill"></i> View User List</a>
@@ -81,7 +81,9 @@
                 <a href="data-entry.html" class=""><i class="bi bi-pencil-square"></i> Data Entry</a>
             </nav>
             <div class="sidebar-foot">
-                <a href="#" class="js-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                <a href="javascript:void(0)" id="btnLogout">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
             </div>
         </div>
         <div class="main-content">
@@ -117,88 +119,24 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="~/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="~/js/api.js"></script>
+
+    <script src="~/js/logout.js"></script>
+
+
+    <script>
+        if (!localStorage.getItem("jwtToken")) {
+        window.location.replace("/Login");
+        }
+    </script>
+
+    @RenderSection("Scripts", required: false)
+
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@* <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LDSWeb</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/LDSWeb.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">LDSWeb</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - LDSWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
-</html> *@
