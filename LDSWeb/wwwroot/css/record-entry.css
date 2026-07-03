@@ -1,2 +1,356 @@
 ﻿body {
+    /* ===========================================================
+   Record Entry Page
+   Generic Page Layout
+   =========================================================== */
+    /* Page */
+    /* Toolbar */
+    /* Viewer Panel */
+    /* Grid Panel */
+    /* Footer */
+    /* Responsive */
+    /* ===========================================================
+   RECORD ENTRY PAGE
+   Lucknow Bhulekh Digitization Portal
+=========================================================== */
+
+    :root {
+        --primary: #0d6efd;
+        --primary-dark: #0b5ed7;
+        --secondary: #6c757d;
+        --success: #198754;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --lighter: #ffffff;
+        --border: #d8dde3;
+        --shadow: 0 4px 12px rgba(0,0,0,.08);
+        --radius: 10px;
+    }
+    /* ===========================================================
+    BODY
+=========================================================== */
+
+    body {
+        background: #eef2f7;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* ===========================================================
+    MAIN PAGE
+=========================================================== */
+
+    .record-page {
+        padding: 20px;
+    }
+    /* ===========================================================
+    HEADER
+=========================================================== */
+
+    .record-header {
+        background: #fff;
+        border-radius: var(--radius);
+        padding: 18px 25px;
+        margin-bottom: 15px;
+        box-shadow: var(--shadow);
+    }
+
+    .logo-circle {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+    }
+
+    .portal-title {
+        color: #1b3b6f;
+        font-weight: 700;
+    }
+
+    .record-title {
+        font-weight: 700;
+        color: #2d4059;
+    }
+    /* ===========================================================
+    INFORMATION PANEL
+=========================================================== */
+
+    .record-information {
+        background: #fff;
+        border-radius: var(--radius);
+        padding: 18px;
+        margin-bottom: 15px;
+        box-shadow: var(--shadow);
+    }
+
+        .record-information label {
+            font-weight: 600;
+            font-size: 13px;
+            color: #495057;
+        }
+    /* ===========================================================
+    TOOLBAR
+=========================================================== */
+
+    .record-toolbar {
+        background: #fff;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+    }
+
+        .record-toolbar .btn {
+            border-radius: 8px;
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+
+            .record-toolbar .btn i {
+                margin-right: 5px;
+            }
+    /* ===========================================================
+    BODY
+=========================================================== */
+
+    .record-body {
+        min-height: 650px;
+    }
+    /* ===========================================================
+    PANELS
+=========================================================== */
+
+    .record-panel {
+        background: #fff;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        height: 100%;
+    }
+    /* ===========================================================
+    PANEL HEADER
+=========================================================== */
+
+    .panel-header {
+        background: #f8fafc;
+        border-bottom: 1px solid #dee2e6;
+        padding: 14px 18px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    /* ===========================================================
+    PDF TOOLBAR
+=========================================================== */
+
+    .pdf-toolbar {
+        background: #fff;
+        border-bottom: 1px solid #e4e7ea;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ===========================================================
+    PDF VIEWER
+=========================================================== */
+
+    .pdf-viewer {
+        background: #dfe7ef;
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pdf-placeholder {
+        text-align: center;
+        color: #6c757d;
+    }
+
+        .pdf-placeholder i {
+            font-size: 95px;
+            color: #dc3545;
+        }
+
+        .pdf-placeholder h5 {
+            margin-top: 15px;
+            font-weight: 600;
+        }
+    /* ===========================================================
+    SUMMARY BOXES
+=========================================================== */
+
+    .grid-summary {
+        padding: 18px;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .summary-box {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    .summary-title {
+        font-size: 13px;
+        color: #6c757d;
+    }
+
+    .summary-value {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    /* ===========================================================
+    TABLE
+=========================================================== */
+
+    .table {
+        margin-bottom: 0;
+    }
+
+        .table thead th {
+            white-space: nowrap;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table td {
+            vertical-align: middle;
+        }
+
+        .table input {
+            min-width: 120px;
+        }
+
+            .table input.form-control {
+                border-radius: 6px;
+                font-size: 14px;
+            }
+    /* ===========================================================
+    STATUS BAR
+=========================================================== */
+
+    .record-statusbar {
+        margin-top: 15px;
+        background: #163b65;
+        color: #fff;
+        border-radius: var(--radius);
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+        .record-statusbar strong {
+            color: #fff;
+        }
+    /* ===========================================================
+    LOADER
+=========================================================== */
+
+    .loader-overlay {
+        position: fixed;
+        inset: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,.85);
+        z-index: 9999;
+    }
+    /* ===========================================================
+    TOAST
+=========================================================== */
+
+    .toast {
+        min-width: 320px;
+    }
+    /* ===========================================================
+    HOVER EFFECTS
+=========================================================== */
+
+    .record-panel:hover {
+        transform: translateY(-2px);
+        transition: .25s;
+    }
+
+    .summary-box:hover {
+        background: #e9f3ff;
+        transition: .2s;
+    }
+
+    .record-toolbar .btn:hover {
+        transform: translateY(-1px);
+    }
+    /* ===========================================================
+    FORM CONTROLS
+=========================================================== */
+
+    .form-select,
+    .form-control {
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+    }
+
+        .form-select:focus,
+        .form-control:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 .15rem rgba(13,110,253,.20);
+        }
+    /* ===========================================================
+    SCROLLBAR
+=========================================================== */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #adb5bd;
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* ===========================================================
+    RESPONSIVE
+=========================================================== */
+
+    @media(max-width:991px) {
+
+        .record-toolbar .btn-toolbar {
+            display: block;
+        }
+
+        .record-toolbar .btn-group {
+            margin-bottom: 10px;
+        }
+
+        .pdf-viewer {
+            height: 450px;
+        }
+
+        .record-statusbar {
+            text-align: center;
+        }
+    }
+
+    .record-breadcrumb {
+        background: #fff;
+        padding: 10px 18px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+    }
+
+        .record-breadcrumb .breadcrumb {
+            margin-bottom: 0;
+        }
+
+        .record-breadcrumb a {
+            text-decoration: none;
+        }
 }

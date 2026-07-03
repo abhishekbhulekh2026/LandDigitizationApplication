@@ -19,7 +19,23 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script src="~/js/api.js"></script>
+    <style>
+        .loader-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(255,255,255,.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+        }
 
+        .loader-overlay img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        }
+    </style>
 </head>
 <body class="auth-page-body">
 
@@ -59,9 +75,14 @@
             <i class="bi bi-shield-lock-fill"></i> Secure Officer Access
         </div>
     </div>
-
+   
 
     <div class="auth-wrap">
+      
+        <div id="loading" class="loader-overlay" style="display:none;">
+            <img src="~/loader.gif" alt="Loading">
+        </div>
+
         <div class="auth-card">
             <div class="auth-side">
                 <div>
@@ -75,6 +96,7 @@
                 <p class="auth-footnote">Developed &amp; maintained by National Informatics Centre (NIC), Lucknow</p>
             </div>
             <div class="auth-form-pane">
+               
                 <h4 class="mb-1">Officer Login</h4>
                 <p class="text-muted small mb-4">Enter your credentials to access the admin dashboard</p>
                 <form id="loginForm">
@@ -134,7 +156,8 @@
     <script src="~/js/main.js"></script>
 
     <script src="~/js/login.js"></script>
-   
+
+    <script src="~/js/loader.js"></script>
     
 </body>
 </html>

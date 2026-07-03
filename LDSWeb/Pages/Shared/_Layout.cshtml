@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/style.css">
     <!-- jQuery -->
-   
+    <link href="~/css/site.css" rel="stylesheet" />
 
     <!-- Bootstrap (if using Bootstrap) -->
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-
+    @RenderSection("Styles", required: false)
 </head>
 <body>
 
@@ -78,7 +78,7 @@
                 <a href="create-user.html" class=""><i class="bi bi-person-plus-fill"></i> Create User</a>
                 <a href="user-list.html" class=""><i class="bi bi-people-fill"></i> View User List</a>
                 <a href="approve-reject.html" class=""><i class="bi bi-clipboard-check-fill"></i> Approve / Reject</a>
-                <a href="data-entry.html" class=""><i class="bi bi-pencil-square"></i> Data Entry</a>
+                <a href="~/RecordEntry" class=""><i class="bi bi-pencil-square"></i> Data Entry</a>
             </nav>
             <div class="sidebar-foot">
                 <a href="javascript:void(0)" id="btnLogout">
