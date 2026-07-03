@@ -2,41 +2,107 @@
  * Editable Grid Component
  ******************************************************************************/
 
+// const EditableGrid = {
+
+//     initialize(options) {
+
+//     },
+
+//     create(columns) {
+
+//     },
+
+//     addRow() {
+
+//     },
+
+//     deleteRow(index) {
+
+//     },
+
+//     clear() {
+
+//     },
+
+//     getData() {
+
+//     },
+
+//     setData(data) {
+
+//     },
+
+//     validate() {
+
+//     },
+
+//     save() {
+
+//     }
+
+// };
+
 const EditableGrid = {
 
-    initialize(options) {
+    tableSelector: "#entryGrid",
+
+    init() {
+
+        this.bindKeyboard();
 
     },
 
-    create(columns) {
+    bindKeyboard() {
+
+        $(document).on("keydown",
+            `${this.tableSelector} input`,
+            function (e) {
+
+                const current = $(this);
+
+                if (e.key === "Enter") {
+
+                    e.preventDefault();
+
+                    const row = current.closest("tr");
+
+                    const next =
+                        row.next()
+                            .find("input:first");
+
+                    if (next.length) {
+
+                        next.focus();
+
+                    }
+
+                }
+
+            });
 
     },
 
     addRow() {
 
-    },
-
-    deleteRow(index) {
+        console.log("Add Row");
 
     },
 
-    clear() {
+    deleteRow() {
+
+        console.log("Delete Row");
 
     },
 
     getData() {
 
-    },
+        const data = [];
 
-    setData(data) {
-
-    },
-
-    validate() {
+        return data;
 
     },
 
-    save() {
+    clear() {
 
     }
 

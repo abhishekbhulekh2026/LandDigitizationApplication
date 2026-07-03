@@ -2,29 +2,54 @@
  * Status Bar Component
  ******************************************************************************/
 
+// const StatusBar = {
+
+//     initialize() {
+
+//     },
+
+//     setMessage(message) {
+
+//     },
+
+//     setPage(pageNo) {
+
+//     },
+
+//     setTotalRecords(total) {
+
+//     },
+
+//     setUser(userName) {
+
+//     },
+
+//     setProgress(value) {
+
+//     }
+
+// };
+
 const StatusBar = {
 
-    initialize() {
+    setStatus(message) {
 
-    },
-
-    setMessage(message) {
+        $("#lblSaveStatus")
+            .text(message);
 
     },
 
     setPage(pageNo) {
 
-    },
-
-    setTotalRecords(total) {
-
-    },
-
-    setUser(userName) {
+        $("#lblStatusPage")
+            .text(pageNo);
 
     },
 
-    setProgress(value) {
+    setRecordCount(count) {
+
+        $("#lblRecordCount")
+            .text(count);
 
     }
 

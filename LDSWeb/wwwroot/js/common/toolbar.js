@@ -2,37 +2,69 @@
  * Toolbar Component
  ******************************************************************************/
 
+// const Toolbar = {
+
+//     initialize() {
+
+//     },
+
+//     previous() {
+
+//     },
+
+//     next() {
+
+//     },
+
+//     save() {
+
+//     },
+
+//     saveAndNext() {
+
+//     },
+
+//     zoomIn() {
+
+//     },
+
+//     zoomOut() {
+
+//     },
+
+//     rotate() {
+
+//     }
+
+// };
+
 const Toolbar = {
 
-    initialize() {
+    init() {
+
+        this.bindEvents();
 
     },
 
-    previous() {
+    bindEvents() {
 
-    },
+        $("#btnSave").on("click", () => {
 
-    next() {
+            $(document).trigger("toolbar:save");
 
-    },
+        });
 
-    save() {
+        $("#btnSaveNext").on("click", () => {
 
-    },
+            $(document).trigger("toolbar:savenext");
 
-    saveAndNext() {
+        });
 
-    },
+        $("#btnRefresh").on("click", () => {
 
-    zoomIn() {
+            location.reload();
 
-    },
-
-    zoomOut() {
-
-    },
-
-    rotate() {
+        });
 
     }
 

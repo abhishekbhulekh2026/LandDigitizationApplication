@@ -8,8 +8,12 @@ namespace UserModel.ResponseModel
 {
     public class RoleListResModel
     {
-        public int Id { get; set; }
-        public string? RoleName { get; set; }
-        public bool? Status { get; set; }
+        public int RoleId { get; set; }
+
+        public string RoleCode { get; set; }
+
+        public string RoleName { get; set; }
+
+        public string RoleDescription { get; set; }
     }
 }

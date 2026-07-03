@@ -5,15 +5,21 @@
 
 const Page = {
 
-    initialize() {
+    init() {
+
+        this.bindEvents();
+
+        console.log("Page Initialized");
 
     },
 
     bindEvents() {
 
-    },
+        $(window).on("resize", () => {
 
-    destroy() {
+            console.log("Window resized");
+
+        });
 
     }
 

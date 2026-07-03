@@ -118,15 +118,16 @@ builder.Services.AddHttpClient();
 builder.Services.AddScoped<ILoginBusiness, LoginBusiness>();
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 
+builder.Services.AddScoped<IMasterBusiness, MasterBusiness>();
+builder.Services.AddScoped<ILocationRepository, LocationRepository>();
+
+
+
 
 builder.Services.AddScoped<ISignupBusiness, SignupBusiness>();
-builder.Services.AddScoped<IMasterBusiness, MasterBusiness>();
-
 builder.Services.AddScoped<IAdminBusiness, AdminBusiness>();
-
 builder.Services.AddScoped<IUserBusiness, UserBusiness>();
 builder.Services.AddScoped<IManageUserBusiness, ManageUserBusiness>();
-
 builder.Services.AddScoped<EncryptDecryptHelper>();
 
 
