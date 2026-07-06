@@ -1,0 +1,17 @@
+﻿body {
+    .viewer {
+        height: 700px;
+        overflow: auto;
+        background: #dfe7ef;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .viewer-image {
+        max-width: 100%;
+        transition: .25s;
+        transform-origin: center;
+        user-select: none;
+    }
+}

@@ -20,13 +20,14 @@ namespace BusinessLogic
         Task<CreateUpdateDeleteResponse> VillageList(int? tehsilId, int? parganaId);
         Task<CreateUpdateDeleteResponse> TehsilList();
         Task<CreateUpdateDeleteResponse> ParganaList();
-        Task<CreateUpdateDeleteResponse> RoleList();   
+        Task<CreateUpdateDeleteResponse> RoleList();
+        Task<CreateUpdateDeleteResponse> RecordTypeList(int villageId);
     }
 
     public class MasterBusiness : IMasterBusiness
     {
-        private readonly ILocationRepository _repository;
-        public MasterBusiness(ILocationRepository repository)
+        private readonly IMasterRepository _repository;
+        public MasterBusiness(IMasterRepository repository)
         {
             _repository = repository;
         }
@@ -212,6 +213,50 @@ namespace BusinessLogic
                     Status = true,
                     Message = "Success",
                     Data = roleList
+                };
+            }
+            catch (Exception ex)
+            {
+                return new CreateUpdateDeleteResponse
+                {
+                    Status = false,
+                    Message = ex.Message
+                };
+            }
+        }
+
+        public async Task<CreateUpdateDeleteResponse> RecordTypeList(int villageId)
+        {
+            try
+            {
+                DataTable dt = await _repository.GetRecordTypeMaster(villageId);
+
+                List<RecordTypeListResModel> recordList = new();
+
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        recordList.Add(new RecordTypeListResModel
+                        {
+                            RecordTypeId = Convert.ToInt32(row["RecordTypeId"]),
+                            RecordNameEn = row["RecordNameEn"]?.ToString(),
+                            VolumeNumber = Convert.ToInt32(row["VolumeNumber"]),
+                            YearFrom = row["YearFrom"] == DBNull.Value
+                                ? null
+                                : Convert.ToInt32(row["YearFrom"]),
+                            Language = row["Language"]?.ToString(),
+                            YearTypeEn = row["YearTypeEn"]?.ToString(),
+                            DisplayName = row["DisplayName"]?.ToString()
+                        });
+                    }
+                }
+
+                return new CreateUpdateDeleteResponse
+                {
+                    Status = true,
+                    Message = "Success",
+                    Data = recordList
                 };
             }
             catch (Exception ex)

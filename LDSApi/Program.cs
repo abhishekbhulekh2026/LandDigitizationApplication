@@ -119,7 +119,7 @@ builder.Services.AddScoped<ILoginBusiness, LoginBusiness>();
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 
 builder.Services.AddScoped<IMasterBusiness, MasterBusiness>();
-builder.Services.AddScoped<ILocationRepository, LocationRepository>();
+builder.Services.AddScoped<IMasterRepository, MasterRepository>();
 
 
 
@@ -136,20 +136,14 @@ builder.Services.AddScoped<EncryptDecryptHelper>();
 builder.Services.AddScoped<JwtUserHelper>();
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", builder =>
-    {
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
-    });
-
     options.AddPolicy("WebAppPolicy", policy =>
     {
-        policy.WithOrigins("https://localhost:7099")
+        policy.WithOrigins(
+                "https://localhost:7099",
+                "https://webtestingapp.runasp.net")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
-
 });
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -266,7 +260,8 @@ app.Use(async (context, next) =>
 
     await next();
 });
-app.UseCors("AllowAll");
+app.UseRouting();
+app.UseCors("WebAppPolicy");
 app.UseRateLimiter();
 app.UseAuthentication(); // ? ADDED — required for JWT
 app.UseAuthorization();

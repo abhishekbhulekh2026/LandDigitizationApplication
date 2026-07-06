@@ -34,6 +34,8 @@ async function login() {
 
         if (result.ResponseMessage !== "success") {
 
+            alert(result.ResponseMessage);
+
             Notify.error(result.ResponseMessage);
 
             return;
@@ -57,49 +59,3 @@ async function login() {
 
 }
 
-
-
-// $(function () {
-
-//     $("#btnLogin").click(login);
-
-// });
-
-// async function login() {
-
-//     const loginData = {
-//         userName: $("#txtUserName").val().trim(),
-//         password: $("#txtPassword").val()
-//     };
-
-//     try {
-
-//         const result = await Api.request("/api/Login/UserLogin", {
-//             method: "POST",
-//             body: JSON.stringify(loginData)
-//         });
-
-//         console.log(result);
-
-//         if (result.ResponseMessage === "success") {
-
-//             localStorage.setItem("jwtToken", result.Token);
-//             localStorage.setItem("userId", result.UserID);
-
-//             window.location.href = "/Index";
-
-//         } else {
-
-//             alert(result.ResponseMessage);
-
-//         }
-
-//     }
-//     catch (e) {
-
-//         console.error(e);
-//         alert(e.message);
-
-//     }
-
-// }

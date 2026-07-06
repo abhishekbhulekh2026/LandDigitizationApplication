@@ -34,6 +34,12 @@ namespace LDSApi.Controllers
                 return BadRequest("Invalid user request!!!");
             }
 
+
+           // var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
+
+          //  var userAgent = Request.Headers["User-Agent"].ToString();
+
+
             var returnObj = await _loginBusiness.UserAuthentication(logins);
 
             if (returnObj.Id <= 0)

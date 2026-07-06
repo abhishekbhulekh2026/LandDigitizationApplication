@@ -48,5 +48,13 @@ namespace LDSApi.Controllers
             var res = await _masterBusiness.RoleList();
             return Ok(res);
         }
+
+        [HttpGet("RecordTypeList")]
+        public async Task<IActionResult> RecordTypeList(int villageId)
+        {
+            var res = await _masterBusiness.RecordTypeList(villageId);
+            return Ok(res);
+        }
+       
     }
 }
