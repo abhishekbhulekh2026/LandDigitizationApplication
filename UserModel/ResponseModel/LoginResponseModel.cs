@@ -13,5 +13,7 @@ namespace UserModel.ResponseModel
         public string? UserRole { get; set; }
         public string? Status { get; set; }
         public string? LoginMessage { get; set; }
+
+        public string? ResponseCode { get; set; }
     }
 }

@@ -23,7 +23,6 @@ async function login() {
             "/api/Login/UserLogin",
 
             {
-
                 method: "POST",
 
                 body: JSON.stringify(model)
@@ -34,7 +33,7 @@ async function login() {
 
         if (result.ResponseMessage !== "success") {
 
-            alert(result.ResponseMessage);
+           // alert(result.ResponseMessage);
 
             Notify.error(result.ResponseMessage);
 

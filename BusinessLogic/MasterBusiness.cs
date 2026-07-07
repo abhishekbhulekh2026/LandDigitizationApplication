@@ -22,6 +22,8 @@ namespace BusinessLogic
         Task<CreateUpdateDeleteResponse> ParganaList();
         Task<CreateUpdateDeleteResponse> RoleList();
         Task<CreateUpdateDeleteResponse> RecordTypeList(int villageId);
+        Task<CreateUpdateDeleteResponse> RecordVolumeList(long VolumeId);
+        Task<CreateUpdateDeleteResponse> GetRecordPagesByVolume(long volumeId);
     }
 
     public class MasterBusiness : IMasterBusiness
@@ -241,6 +243,7 @@ namespace BusinessLogic
                         {
                             RecordTypeId = Convert.ToInt32(row["RecordTypeId"]),
                             RecordNameEn = row["RecordNameEn"]?.ToString(),
+                            VolumeId = Convert.ToInt64(row["VolumeId"]),
                             VolumeNumber = Convert.ToInt32(row["VolumeNumber"]),
                             YearFrom = row["YearFrom"] == DBNull.Value
                                 ? null
@@ -257,6 +260,87 @@ namespace BusinessLogic
                     Status = true,
                     Message = "Success",
                     Data = recordList
+                };
+            }
+            catch (Exception ex)
+            {
+                return new CreateUpdateDeleteResponse
+                {
+                    Status = false,
+                    Message = ex.Message
+                };
+            }
+        }
+
+        public async Task<CreateUpdateDeleteResponse> RecordVolumeList(long VolumeId)
+        {
+            try
+            {
+                DataTable dt = await _repository.GetRecordVolumes(VolumeId);
+
+                List<RecordVolumeResModel> roleList = new();
+
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        roleList.Add(new RecordVolumeResModel
+                        {
+                            VolumeId = Convert.ToInt64(row["VolumeId"]),
+                            VolumeNumber = row["VolumeNumber"]?.ToString(),
+                           
+                        });
+                    }
+                }
+
+                return new CreateUpdateDeleteResponse
+                {
+                    Status = true,
+                    Message = "Success",
+                    Data = roleList
+                };
+            }
+            catch (Exception ex)
+            {
+                return new CreateUpdateDeleteResponse
+                {
+                    Status = false,
+                    Message = ex.Message
+                };
+            }
+        }
+
+        public async Task<CreateUpdateDeleteResponse> GetRecordPagesByVolume(long volumeId)
+        {
+            try
+            {
+                DataTable dt = await _repository.GetRecordPagesByVolume(volumeId);
+
+                List<RecordPageListResModel> pageList = new();
+
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        pageList.Add(new RecordPageListResModel
+                        {
+                            PageId = Convert.ToInt64(row["PageId"]),
+                            VolumeId = Convert.ToInt64(row["VolumeId"]),
+                            PageNumber = Convert.ToInt32(row["PageNumber"]),
+                            ImageFileName = row["ImageFileName"]?.ToString(),
+                            IsMissing = Convert.ToBoolean(row["IsMissing"]),
+                            IsDamaged = Convert.ToBoolean(row["IsDamaged"]),
+                            CreatedOn = Convert.ToDateTime(row["CreatedOn"]),
+                            FileHash = row["FileHash"]?.ToString()
+                        });
+                    }
+                }
+
+                return new CreateUpdateDeleteResponse
+                {
+                    Status = true,
+                    Message = "Success",
+                    Data = pageList
                 };
             }
             catch (Exception ex)

@@ -142,7 +142,9 @@
                 <a href="~/RecordEntry" class=""><i class="bi bi-pencil-square"></i> Data Entry</a>
             </nav>
             <div class="sidebar-foot">
-                <a href="#" class="js-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                <a href="javascript:void(0)" id="btnLogout">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
             </div>
         </div>
 
@@ -283,12 +285,7 @@
 
                 <select class="form-select" id="ddlDistrict">
 
-                    <option>
-
-                        Lucknow
-
-                    </option>
-
+                 
                 </select>
 
             </div>
@@ -302,12 +299,6 @@
                 </label>
 
                 <select class="form-select" id="ddlTehsil">
-
-                    <option>
-
-                        Bakshi Ka Talab
-
-                    </option>
 
                 </select>
 
@@ -324,12 +315,7 @@
 
                         <select class="form-select" id="ddlPargana">
 
-                            <option>
-
-                                Pargana 1
-
-                            </option>
-
+                            
                         </select>
 
                     </div>
@@ -344,17 +330,11 @@
 
                 <select class="form-select" id="ddlVillage">
 
-                    <option>
-
-                        Select Village
-
-                    </option>
-
                 </select>
 
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-3">
 
                 <label class="form-label">
 
@@ -364,17 +344,11 @@
 
                 <select class="form-select" id="ddlRecordType">
 
-                    <option>
-
-                        CH Form 41/45
-
-                    </option>
-
                 </select>
 
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-1">
 
                 <label class="form-label">
 
@@ -384,11 +358,7 @@
 
                 <select class="form-select" id="ddlVolume">
 
-                    <option>
-
-                        Volume 01
-
-                    </option>
+                  
 
                 </select>
 
@@ -1233,13 +1203,18 @@
 
     <script src="~/js/logout.js"></script>
 
+    <script src="~/js/loader.js"></script>
+
+    <script src="~/js/notification.js"></script>
+
+    <script src="~/js/auth.js"></script>
 
     <script>
         if (!localStorage.getItem("jwtToken")) {
         window.location.replace("/Login");
         }
     </script>
-
+    <script src="~/js/masters/master.js"></script>
   
     @section Scripts {
 
@@ -1258,6 +1233,10 @@
         <script src="~/js/common/toolbar.js"></script>
 
         <script src="~/js/common/statusbar.js"></script>
+
+
+      
+
     }
 </body>
 </html>

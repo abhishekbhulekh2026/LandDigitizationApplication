@@ -1,8 +1,8 @@
 ﻿const Api = {
 
-    // baseUrl: "https://localhost:7087",
+     baseUrl: "https://localhost:7087",
 
-    baseUrl: "https://testingapp.runasp.net",
+    // baseUrl: "https://testingapp.runasp.net",
 
     async request(url, options = {}) {
 

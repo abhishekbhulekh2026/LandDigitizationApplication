@@ -12,6 +12,8 @@ namespace UserModel.ResponseModel
 
         public string? RecordNameEn { get; set; }
 
+        public long VolumeId { get; set; }
+
         public int? VolumeNumber { get; set; }
 
         public int? YearFrom { get; set; }

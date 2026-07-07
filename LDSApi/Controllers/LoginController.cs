@@ -35,43 +35,15 @@ namespace LDSApi.Controllers
             }
 
 
-           // var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
+            // var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
 
-          //  var userAgent = Request.Headers["User-Agent"].ToString();
+            //  var userAgent = Request.Headers["User-Agent"].ToString();
 
 
             var returnObj = await _loginBusiness.UserAuthentication(logins);
 
-            if (returnObj.Id <= 0)
-            {
-                return BadRequest(new JWTTokenResponse
-                {
-                    Token = "",
-                    UserID = "",
-                    ResponseMessage = returnObj.LoginMessage
-                });
-            }
-
-            // Check status before generating token
-            if (returnObj.Status == "Pending")
-            {
-                return Ok(new JWTTokenResponse
-                {
-                    Token = "",
-                    UserID = returnObj.Id.ToString(),
-                    ResponseMessage = "Your account is pending approval."
-                });
-            }
-            else if (returnObj.Status == "Rejected")
-            {
-                return Ok(new JWTTokenResponse
-                {
-                    Token = "",
-                    UserID = returnObj.Id.ToString(),
-                    ResponseMessage = "Your account has been rejected."
-                });
-            }
-            else if (returnObj.LoginMessage == "Your account has been deleted.")
+            // Any non-successful login returned by the SP
+            if (returnObj.ResponseCode != "SUCCESS")
             {
                 return Ok(new JWTTokenResponse
                 {

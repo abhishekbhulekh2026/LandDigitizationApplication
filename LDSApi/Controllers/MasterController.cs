@@ -14,6 +14,14 @@ namespace LDSApi.Controllers
             _masterBusiness = masterBusiness;
         }
 
+        [HttpGet("RoleList")]
+        public async Task<IActionResult> RoleList()
+        {
+            var res = await _masterBusiness.RoleList();
+            return Ok(res);
+        }
+
+
         [HttpGet("DistrictList")]
         public async Task<IActionResult> DistrictList()
         {
@@ -42,17 +50,25 @@ namespace LDSApi.Controllers
             return Ok(res);
         }
 
-        [HttpGet("RoleList")]
-        public async Task<IActionResult> RoleList()
-        {
-            var res = await _masterBusiness.RoleList();
-            return Ok(res);
-        }
-
+      
         [HttpGet("RecordTypeList")]
         public async Task<IActionResult> RecordTypeList(int villageId)
         {
             var res = await _masterBusiness.RecordTypeList(villageId);
+            return Ok(res);
+        }
+
+        [HttpGet("RecordVolumeList")]
+        public async Task<IActionResult> RecordVolumeList(long VolumeId)
+        {
+            var res = await _masterBusiness.RecordVolumeList(VolumeId);
+            return Ok(res);
+        }
+
+        [HttpGet("GetRecordPagesByVolume")]
+        public async Task<IActionResult> GetRecordPagesByVolume(long VolumeId)
+        {
+            var res = await _masterBusiness.GetRecordPagesByVolume(VolumeId);
             return Ok(res);
         }
        

@@ -72,6 +72,9 @@ namespace BusinessLogic
             userLogin.LoginMessage =
                 row["LoginMessage"]?.ToString();
 
+            userLogin.ResponseCode =
+               row["ResponseCode"]?.ToString();
+
             return userLogin;
         }
 

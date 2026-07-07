@@ -18,6 +18,8 @@ namespace Repository
         Task<DataTable> GetVillageMaster(string actionType, int? tehsilId, int? parganaId);
         Task<DataTable> GetRoleMaster(string actionType);
         Task<DataTable> GetRecordTypeMaster(int villageId);
+        Task<DataTable> GetRecordVolumes(long VolumeId);
+        Task<DataTable> GetRecordPagesByVolume(long volumeId);
     }
 
 
@@ -72,6 +74,28 @@ namespace Repository
                 30,
                 CommandType.StoredProcedure,
                 new SqlParameter("@VillageId", villageId)
+            );
+        }
+
+        public async Task<DataTable> GetRecordVolumes(long VolumeId)
+        {
+            return await SqlHelper.ExecuteDataTableAsync(
+                _connectionString,
+                "admin.Sp_RecordVolumes",
+                30,
+                CommandType.StoredProcedure,
+                new SqlParameter("@VolumeId", VolumeId)
+            );
+        }
+
+        public async Task<DataTable> GetRecordPagesByVolume(long volumeId)
+        {
+            return await SqlHelper.ExecuteDataTableAsync(
+                _connectionString,
+                "admin.Sp_RecordPagesByVolume",
+                30,
+                CommandType.StoredProcedure,
+                new SqlParameter("@VolumeId", volumeId)
             );
         }
 
