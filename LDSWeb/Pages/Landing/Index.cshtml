@@ -1,0 +1,1116 @@
+﻿@page
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucknow Bhulekh Digitization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- jQuery -->
+    <link href="~/css/landing.css" rel="stylesheet" />
+
+    <!-- Bootstrap (if using Bootstrap) -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+
+    <!-- ========================================================= -->
+    <!-- TOP UTILITY BAR -->
+    <!-- ========================================================= -->
+
+    <div class="top-strip">
+
+        <div class="container-fluid">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div>
+
+                    <i class="bi bi-geo-alt-fill me-2"></i>
+
+                    Government of Uttar Pradesh |
+                    District Administration Lucknow
+
+                </div>
+
+                <div class="d-flex align-items-center">
+
+                    <a href="#" class="utility-link">
+
+                        Skip to Main Content
+
+                    </a>
+
+                    <span class="mx-3">|</span>
+
+                    <a href="#" class="utility-link">
+
+                        Accessibility
+
+                    </a>
+
+                    <span class="mx-3">|</span>
+
+                    <select class="form-select form-select-sm language-select">
+
+                        <option>English</option>
+                        <option>हिन्दी</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- HEADER -->
+    <!-- ========================================================= -->
+
+    <header class="landing-header shadow-sm">
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-4">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="~/assets/up-seal.svg"
+                             class="gov-logo"
+                             alt="UP Logo" />
+
+                        <div class="ms-3">
+
+                            <h3 class="mb-0 portal-title">
+
+                                Lucknow Bhulekh
+
+                            </h3>
+
+                            <div class="portal-subtitle">
+
+                                ज़िलाधिकारी कार्यालय, लखनऊ
+
+                            </div>
+
+                            <small class="text-muted">
+
+                                DISTRICT MAGISTRATE OFFICE, LUCKNOW
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 text-center">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://lucknowbhulekh.in/img/cm-up-pm-india.png" alt="no-preview" style="width: 323px" />
+
+                        <div class="ms-3">
+
+                            <h3 class="mb-0 portal-title">
+
+                                Lucknow Bhulekh
+
+                            </h3>
+
+                            <div class="portal-subtitle">
+
+                               
+                                भूमि अभिलेख डिजिटलीकरण परियोजना
+
+                            </div>
+
+                            <small class="text-muted">
+
+                              
+                                Uttar Pradesh Government
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+@* 
+                    <img src="https://lucknowbhulekh.in/img/cm-up-pm-india.png" class="gov-logo" alt="no-preview" />
+                    <h4 class="fw-bold text-primary mb-1">
+
+                        भूमि अभिलेख डिजिटलीकरण परियोजना
+
+                    </h4>
+
+                    <small class="text-muted">
+
+                        Uttar Pradesh Government
+
+                    </small> *@
+
+                </div>
+
+                <div class="col-lg-3 text-end">
+
+                    <img src="~/assets/nic-logo.svg"
+                         class="nic-logo"
+                         alt="NIC" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- NAVIGATION -->
+    <!-- ========================================================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="mainMenu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active">
+
+                            <i class="bi bi-house-door-fill"></i>
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link">
+
+                            About Project
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link">
+
+                            User Manual
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <div class="ms-auto">
+
+                    <a href="/Login"
+                       class="btn btn-warning">
+
+                        <i class="bi bi-box-arrow-in-right me-2"></i>
+
+                        Officer Login
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!-- HERO -->
+    <!-- ========================================================= -->
+
+    <section class="hero-section">
+
+        <div class="hero-overlay">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7">
+
+                        <span class="hero-badge">
+
+                            Government Digital Initiative
+
+                        </span>
+
+                        <h1 class="hero-title">
+
+                            Lucknow Land Record
+                            Digitization Portal
+
+                        </h1>
+
+                        <p class="hero-description">
+
+                            Secure digital platform for metadata entry,
+                            verification and archival of historical
+                            land revenue records of District Lucknow.
+
+                        </p>
+
+                        <div class="mt-4">
+
+                            <a href="/Login"
+                               class="btn btn-warning btn-lg me-3">
+
+                                <i class="bi bi-box-arrow-in-right"></i>
+
+                                Officer Login
+
+                            </a>
+
+                            <button class="btn btn-outline-light btn-lg">
+
+                                <i class="bi bi-play-circle"></i>
+
+                                Project Overview
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <div class="hero-card shadow-lg">
+
+                            <h4>
+
+                                Project Highlights
+
+                            </h4>
+
+                            <hr>
+
+                            <div class="hero-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Metadata Entry
+
+                            </div>
+
+                            <div class="hero-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Page Verification
+
+                            </div>
+
+                            <div class="hero-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Audit Trail
+
+                            </div>
+
+                            <div class="hero-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Secure Record Storage
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- LIVE STATISTICS -->
+    <!-- ========================================================= -->
+
+    <section class="stats-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                Project Statistics
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-building"></i>
+
+                        <h2 id="districtCount">01</h2>
+
+                        <p>District</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        <h2 id="villageCount">0</h2>
+
+                        <p>Villages</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-collection-fill"></i>
+
+                        <h2 id="volumeCount">0</h2>
+
+                        <p>Volumes</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-file-earmark-text-fill"></i>
+
+                        <h2 id="pageCount">0</h2>
+
+                        <p>Scanned Pages</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- QUICK ACTIONS (Continues in Part 2) -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- QUICK ACTIONS -->
+    <!-- ========================================================= -->
+
+    <section class="quick-action-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                Quick Access
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <div class="action-icon bg-primary">
+
+                            <i class="bi bi-box-arrow-in-right"></i>
+
+                        </div>
+
+                        <h5>Officer Login</h5>
+
+                        <p>
+
+                            Secure login for data entry operators,
+                            verifiers and administrators.
+
+                        </p>
+
+                        <a href="/Login" class="btn btn-primary btn-sm">
+
+                            Login
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <div class="action-icon bg-success">
+
+                            <i class="bi bi-journal-bookmark-fill"></i>
+
+                        </div>
+
+                        <h5>User Manual</h5>
+
+                        <p>
+
+                            Download operator training manual
+                            and project documentation.
+
+                        </p>
+
+                        <button class="btn btn-success btn-sm">
+
+                            Download
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <div class="action-icon bg-warning">
+
+                            <i class="bi bi-headset"></i>
+
+                        </div>
+
+                        <h5>Help Desk</h5>
+
+                        <p>
+
+                            Contact project support team
+                            for technical assistance.
+
+                        </p>
+
+                        <button class="btn btn-warning btn-sm">
+
+                            Contact
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="action-card">
+
+                        <div class="action-icon bg-danger">
+
+                            <i class="bi bi-info-circle-fill"></i>
+
+                        </div>
+
+                        <h5>Project Info</h5>
+
+                        <p>
+
+                            Learn more about objectives,
+                            workflow and implementation.
+
+                        </p>
+
+                        <button class="btn btn-danger btn-sm">
+
+                            Read More
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- PROJECT WORKFLOW -->
+    <!-- ========================================================= -->
+
+    <section class="workflow-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                Digitization Workflow
+
+            </div>
+
+            <p class="text-center text-muted mb-5">
+
+                Standard workflow followed during land record digitization.
+
+            </p>
+
+            <div class="workflow-wrapper">
+
+                <div class="workflow-step">
+
+                    <div class="workflow-circle">
+
+                        <i class="bi bi-images"></i>
+
+                    </div>
+
+                    <h6>Scanning</h6>
+
+                </div>
+
+                <div class="workflow-arrow">
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </div>
+
+                <div class="workflow-step">
+
+                    <div class="workflow-circle">
+
+                        <i class="bi bi-folder2-open"></i>
+
+                    </div>
+
+                    <h6>Volume Creation</h6>
+
+                </div>
+
+                <div class="workflow-arrow">
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </div>
+
+                <div class="workflow-step">
+
+                    <div class="workflow-circle">
+
+                        <i class="bi bi-pencil-square"></i>
+
+                    </div>
+
+                    <h6>Metadata Entry</h6>
+
+                </div>
+
+                <div class="workflow-arrow">
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </div>
+
+                <div class="workflow-step">
+
+                    <div class="workflow-circle">
+
+                        <i class="bi bi-search"></i>
+
+                    </div>
+
+                    <h6>Verification</h6>
+
+                </div>
+
+                <div class="workflow-arrow">
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </div>
+
+                <div class="workflow-step">
+
+                    <div class="workflow-circle">
+
+                        <i class="bi bi-shield-check"></i>
+
+                    </div>
+
+                    <h6>Approval</h6>
+
+                </div>
+
+                <div class="workflow-arrow">
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </div>
+
+                <div class="workflow-step">
+
+                    <div class="workflow-circle">
+
+                        <i class="bi bi-cloud-check"></i>
+
+                    </div>
+
+                    <h6>Digital Archive</h6>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- KEY FEATURES -->
+    <!-- ========================================================= -->
+
+    <section class="feature-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                System Features
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+
+                    <div class="feature-card">
+
+                        <i class="bi bi-shield-lock-fill feature-icon"></i>
+
+                        <h5>Secure Authentication</h5>
+
+                        <p>
+
+                            JWT based authentication with
+                            role-based authorization.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="feature-card">
+
+                        <i class="bi bi-file-earmark-image-fill feature-icon"></i>
+
+                        <h5>High Resolution Viewer</h5>
+
+                        <p>
+
+                            Smooth image viewer with zoom,
+                            rotate and page navigation.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="feature-card">
+
+                        <i class="bi bi-clock-history feature-icon"></i>
+
+                        <h5>Complete Audit Trail</h5>
+
+                        <p>
+
+                            Every activity is recorded
+                            with timestamp and operator.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CONTINUES IN PART 3 -->
+    <!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- PROJECT OVERVIEW -->
+    <!-- ========================================================= -->
+
+    <section class="overview-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <div class="section-title text-start">
+
+                        About the Project
+
+                    </div>
+
+                    <p class="lead">
+
+                        The Lucknow Bhulekh Digitization Project has been
+                        initiated by the District Administration, Lucknow
+                        to preserve historical land and revenue records
+                        through secure digital archiving.
+
+                    </p>
+
+                    <p>
+
+                        The system enables structured metadata entry,
+                        document verification, secure storage, audit
+                        tracking and future digital search facilities
+                        for historical land records.
+
+                    </p>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-6">
+
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item">
+
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                                    CH Form 41 / 45
+
+                                </li>
+
+                                <li class="list-group-item">
+
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                                    Historical Registers
+
+                                </li>
+
+                                <li class="list-group-item">
+
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                                    Metadata Digitization
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item">
+
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                                    Image Verification
+
+                                </li>
+
+                                <li class="list-group-item">
+
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                                    Audit Trail
+
+                                </li>
+
+                                <li class="list-group-item">
+
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                                    Future Public Search
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="overview-card shadow">
+
+                        <h4>
+
+                            Project Objectives
+
+                        </h4>
+
+                        <hr>
+
+                        <div class="objective-item">
+
+                            Preserve Historical Records
+
+                        </div>
+
+                        <div class="objective-item">
+
+                            Improve Data Accuracy
+
+                        </div>
+
+                        <div class="objective-item">
+
+                            Secure Digital Repository
+
+                        </div>
+
+                        <div class="objective-item">
+
+                            Faster Record Retrieval
+
+                        </div>
+
+                        <div class="objective-item">
+
+                            Long-Term Preservation
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- NOTICE BOARD -->
+    <!-- ========================================================= -->
+
+    <section class="notice-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                Latest Notices
+
+            </div>
+
+            <div class="notice-board shadow-sm">
+
+                <marquee behavior="scroll" direction="up" scrollamount="2" height="150">
+
+                    📢 Metadata Entry Training Batch starts from 10 July.
+
+                    <br /><br />
+
+                    📢 Officers are advised to verify records before approval.
+
+                    <br /><br />
+
+                    📢 Daily database backup is scheduled at 08:00 PM.
+
+                    <br /><br />
+
+                    📢 New scanned volumes uploaded successfully.
+
+                </marquee>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer class="landing-footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <h5>
+
+                        Lucknow Bhulekh Digitization System
+
+                    </h5>
+
+                    <p>
+
+                        District Administration, Lucknow
+
+                        <br />
+
+                        Government of Uttar Pradesh
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h6>
+
+                        Quick Links
+
+                    </h6>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#">Website Policy</a></li>
+
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                        <li><a href="#">Privacy Policy</a></li>
+
+                        <li><a href="#">Help</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h6>
+
+                        Developed By
+
+                    </h6>
+
+                    <p>
+
+                        National Informatics Centre (NIC)
+
+                        <br />
+
+                        Ministry of Electronics & IT
+
+                        <br />
+
+                        Government of India
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="text-center small">
+
+                © @DateTime.Now.Year District Administration Lucknow.
+
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="~/js/landing.js"></script>
+</body>
+</html>
+
+

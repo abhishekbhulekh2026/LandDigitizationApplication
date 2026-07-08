@@ -140,7 +140,7 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
                 "https://localhost:7099",
-                "https://webtestingapp.runasp.net")
+                "https://webtestingapp.runasp.net", "https://dmlucknow.info")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });

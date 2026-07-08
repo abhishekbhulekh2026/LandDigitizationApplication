@@ -1,0 +1,433 @@
+﻿/*=========================================================
+    LANDING PAGE
+    Lucknow Bhulekh Digitization Portal
+=========================================================*/
+
+:root {
+    --primary: #0B4F8C;
+    --secondary: #F58220;
+    --success: #1B8A5A;
+    --light: #F8FAFC;
+    --border: #E5E7EB;
+    --dark: #1F2937;
+    --text: #4B5563;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Inter',sans-serif;
+    background: #f4f7fb;
+    color: var(--dark);
+}
+
+/*=========================================================
+TOP STRIP
+=========================================================*/
+
+.top-strip {
+    background: #05294E;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 25px;
+}
+
+.utility-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+    .utility-link:hover {
+        color: #F58220;
+    }
+
+.language-select {
+    width: 120px;
+}
+
+/*=========================================================
+HEADER
+=========================================================*/
+
+.landing-header {
+    background: #fff;
+    padding: 18px 30px;
+}
+
+.gov-logo {
+    width: 70px;
+}
+
+.nic-logo {
+    max-width: 170px;
+    width: 100%;
+    height: auto;
+}
+
+.portal-title {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.portal-subtitle {
+    color: #666;
+    font-size: 15px;
+}
+
+/*=========================================================
+NAVBAR
+=========================================================*/
+
+.navbar {
+    background: var(--primary) !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-right: 15px;
+}
+
+    .nav-link:hover {
+        color: #FFD28D !important;
+    }
+
+/*=========================================================
+HERO
+=========================================================*/
+
+.hero-section {
+    background: linear-gradient(rgba(4,32,65,.82), rgba(4,32,65,.82)), url('/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    width: 100%;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-description {
+    color: #E4EAF1;
+    font-size: 18px;
+    margin-top: 25px;
+    max-width: 700px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,.18);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+
+.hero-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.hero-item {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+    .hero-item i {
+        color: var(--success);
+        margin-right: 10px;
+    }
+
+/*=========================================================
+SECTION
+=========================================================*/
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    color: var(--primary);
+}
+
+/*=========================================================
+STATISTICS
+=========================================================*/
+
+.stats-section {
+    padding: 70px 0;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 35px;
+    text-align: center;
+    transition: .35s;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+    .stat-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .stat-card i {
+        font-size: 42px;
+        color: var(--secondary);
+    }
+
+    .stat-card h2 {
+        font-size: 42px;
+        font-weight: 700;
+        color: var(--primary);
+        margin-top: 15px;
+    }
+
+    .stat-card p {
+        margin: 0;
+        color: #666;
+    }
+
+/*=========================================================
+QUICK ACTION
+=========================================================*/
+
+.quick-action-section {
+    padding: 70px 0;
+    background: #fff;
+}
+
+.action-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ECECEC;
+    transition: .30s;
+}
+
+    .action-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    }
+
+.action-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/*=========================================================
+WORKFLOW
+=========================================================*/
+
+.workflow-section {
+    padding: 80px 0;
+    background: #F7F9FC;
+}
+
+.workflow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.workflow-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+.workflow-step {
+    text-align: center;
+    width: 140px;
+}
+
+    .workflow-step h6 {
+        margin-top: 15px;
+    }
+
+.workflow-arrow {
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+/*=========================================================
+FEATURE
+=========================================================*/
+
+.feature-section {
+    padding: 80px 0;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: .3s;
+}
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+    }
+
+.feature-icon {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/*=========================================================
+OVERVIEW
+=========================================================*/
+
+.overview-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.overview-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px;
+    border-left: 5px solid var(--secondary);
+}
+
+.objective-item {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+/*=========================================================
+NOTICE
+=========================================================*/
+
+.notice-section {
+    padding: 80px 0;
+    background: #F7F9FC;
+}
+
+.notice-board {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    border-left: 5px solid var(--secondary);
+}
+
+/*=========================================================
+FOOTER
+=========================================================*/
+
+.landing-footer {
+    background: #05294E;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: #ddd;
+        text-decoration: none;
+    }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+.landing-footer hr {
+    border-color: rgba(255,255,255,.2);
+}
+
+/*=========================================================
+BUTTONS
+=========================================================*/
+
+.btn-warning {
+    background: #F58220;
+    border: none;
+}
+
+    .btn-warning:hover {
+        background: #DD6C08;
+    }
+
+/*=========================================================
+RESPONSIVE
+=========================================================*/
+
+@media(max-width:991px) {
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-card {
+        margin-top: 40px;
+    }
+
+    .workflow-wrapper {
+        flex-direction: column;
+    }
+
+    .workflow-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media(max-width:768px) {
+
+    .top-strip {
+        display: none;
+    }
+
+    .portal-title {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+}
