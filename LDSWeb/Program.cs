@@ -52,7 +52,7 @@ app.UseAuthorization();
 
 app.MapGet("/", context =>
 {
-    context.Response.Redirect("/Landing");
+    context.Response.Redirect("/Portfolio");
     return Task.CompletedTask;
 });
 

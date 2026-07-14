@@ -1,0 +1,2044 @@
+﻿@page
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+
+    <title>
+
+        Welcome | Lucknow Bhulekh Portal
+
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet" />
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+  
+    <link href="~/css/portfolio.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- TOP GOVERNMENT STRIP -->
+    <!-- ===================================================== -->
+
+    <div class="top-strip">
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <div class="top-left">
+
+                        <i class="bi bi-bank2"></i>
+
+                        Government of Uttar Pradesh
+
+                        <span class="divider"></span>
+
+                        District Administration, Lucknow
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-end">
+
+                    <div class="dropdown me-3">
+
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle"
+                                data-bs-toggle="dropdown">
+
+                            🌐 English
+
+                        </button>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item">English</a></li>
+
+                            <li><a class="dropdown-item">हिन्दी</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- MAIN HEADER -->
+    <!-- ===================================================== -->
+    <!-- ===================================================== -->
+    <!-- MAIN HEADER -->
+    <!-- ===================================================== -->
+
+    <header class="landing-header shadow-sm">
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center">
+
+                <!-- LEFT -->
+
+                <div class="col-lg-5">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="~/assets/up-seal.svg"
+                             class="gov-logo me-3"
+                             alt="UP Government" />
+
+                        <div>
+
+                            <h2 class="portal-title mb-1">
+
+                                Lucknow, Uttar Pradesh
+
+                            </h2>
+
+                            <div class="portal-subtitle">
+
+                                जिला प्रशासन, लखनऊ
+
+                            </div>
+
+                            <small class="text-muted">
+
+                                District Administration, Lucknow
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CENTER -->
+
+                <div class="col-lg-4 text-center">
+
+                    <h2 class="fw-bold text-primary mb-1">
+
+                        Shri. Vishak G., IAS
+
+                    </h2>
+
+                    <div class="text-secondary fw-semibold">
+
+                        District Magistrate, Lucknow
+
+                    </div>
+
+                    <small class="text-muted">
+
+                        Indian Administrative Service
+
+                    </small>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="col-lg-3 text-end">
+
+                    <img src="~/images/dig_ind.png"
+                         class="digital-logo"
+                         alt="Digital India" />
+                  
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- NAVIGATION -->
+    <!-- ========================================================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark government-navbar shadow">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="#">
+
+                            <i class="bi bi-house-door-fill me-1"></i>
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#about">
+
+                            <i class="bi bi-person-badge me-1"></i>
+
+                            District Magistrate
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#administration">
+
+                            <i class="bi bi-bank2 me-1"></i>
+
+                            Administration
+
+                        </a>
+
+                    </li>
+
+                    <!-- Dropdown -->
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+
+                            <i class="bi bi-folder2-open me-1"></i>
+
+                            Projects
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow border-0">
+
+                            <li>
+
+                                <a class="dropdown-item"
+                                   href="~/Landing"
+                                   target="_blank">
+
+                                    <i class="bi bi-file-earmark-text me-2"></i>
+
+                                    Lucknow Bhulekh Portal
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a class="dropdown-item"
+                                   href="#">
+
+                                    <i class="bi bi-globe2 me-2"></i>
+
+                                    District Administration
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a class="dropdown-item"
+                                   href="#gallery">
+
+                                    <i class="bi bi-images me-2"></i>
+
+                                    Photo Gallery
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#gallery">
+
+                            <i class="bi bi-camera-fill me-1"></i>
+
+                            Gallery
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#contact">
+
+                            <i class="bi bi-envelope-fill me-1"></i>
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+               @*  <div class="ms-auto">
+
+                    <a href="/Login"
+                       class="btn btn-light fw-bold px-4 rounded-pill">
+
+                        <i class="bi bi-box-arrow-in-right me-2"></i>
+
+                        Officer Login
+
+                    </a>
+
+                </div> *@
+
+            </div>
+
+        </div>
+
+    </nav>
+  @*   <header class="portal-header">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-2 text-center">
+
+                    <img src="~/images/up-logo.png"
+                         class="gov-logo"
+                         alt="Government Logo" />
+
+                </div>
+
+                <div class="col-lg-8 text-center">
+
+                    <h6 class="header-small">
+
+                        Government of Uttar Pradesh
+
+                    </h6>
+
+                    <h2 class="portal-heading">
+
+                        District Administration, Lucknow
+
+                    </h2>
+
+                    <h4 class="portal-subtitle">
+
+                        Lucknow Bhulekh Digital Land Records Portal
+
+                    </h4>
+
+                    <p class="portal-tagline">
+
+                        Transparency • Accessibility • Digital Governance
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-2 text-center">
+
+                    <img src="~/assets/nic-logo.svg"
+                         class="nic-logo"
+                         alt="NIC Logo" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header> *@
+
+    <!-- ===================================================== -->
+    <!-- HERO SECTION -->
+    <!-- ===================================================== -->
+
+    <section class="hero-section">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- LEFT CONTENT -->
+
+                <div class="col-lg-7">
+
+                    <div class="hero-content">
+
+                        <span class="hero-badge">
+
+                            Digital Governance Initiative
+
+                        </span>
+
+                        <h1>
+
+                            Welcome to
+
+                            <span>
+
+                                Lucknow Bhulekh Portal
+
+                            </span>
+
+                        </h1>
+
+                        <p class="hero-description">
+
+                            The Lucknow Bhulekh Portal is a digital initiative
+                            of the District Administration, Lucknow,
+                            developed to modernize the management of
+                            land records through secure digitization,
+                            metadata entry, verification, and citizen-centric
+                            online services.
+
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#dm-profile"
+                               class="btn btn-warning btn-lg">
+
+                                <i class="bi bi-person-badge-fill"></i>
+
+                                District Magistrate
+
+                            </a>
+
+                            <a href="#initiative"
+                               class="btn btn-outline-light btn-lg">
+
+                                Learn More
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT PROFILE -->
+
+                <div class="col-lg-5">
+
+                    <div class="dm-card">
+
+                        <div class="dm-image">
+
+                            <!-- Replace with uploaded image -->
+
+                            <img src="~/images/dm-vishak.jpeg"
+                                 class="img-fluid"
+                                 alt="Shri Vishak G IAS">
+                           
+                        </div>
+
+                        <div class="dm-info">
+
+                            <h3>
+
+                                Shri Vishak G, IAS
+
+                            </h3>
+
+                            <h5>
+
+                                District Magistrate, Lucknow
+
+                            </h5>
+
+                            <p>
+
+                                Providing visionary leadership for
+                                transparent, technology-driven, and
+                                citizen-focused governance in the
+                                district of Lucknow.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- DISTRICT MAGISTRATE MESSAGE -->
+    <!-- ===================================================== -->
+
+    <section id="dm-profile" class="dm-message-section py-5">
+
+        <div class="container">
+
+            <div class="section-title text-center mb-5">
+
+                <span class="section-badge">
+
+                    Leadership
+
+                </span>
+
+                <h2>
+
+                    Message from the District Magistrate
+
+                </h2>
+
+                <p>
+
+                    Transforming public administration through innovation,
+                    transparency and citizen-centric digital services.
+
+                </p>
+
+            </div>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-4">
+
+                    <div class="profile-panel">
+
+                        <img src="~/images/dm-vishak.jpeg"
+                             class="img-fluid rounded-4 shadow-lg mb-4"
+                             alt="District Magistrate">
+
+                        <h3>
+
+                            Shri Vishak G, IAS
+
+                        </h3>
+
+                        <h5>
+
+                            District Magistrate, Lucknow
+
+                        </h5>
+
+                        <div class="mt-4">
+
+                            <span class="profile-tag">
+
+                                Indian Administrative Service
+
+                            </span>
+
+                            <span class="profile-tag">
+
+                                Digital Governance
+
+                            </span>
+
+                            <span class="profile-tag">
+
+                                Citizen First
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <div class="message-card">
+
+                        <i class="bi bi-quote quote-icon"></i>
+
+                        <h4>
+
+                            Towards Transparent & Technology Driven Governance
+
+                        </h4>
+
+                        <p>
+
+                            The District Administration, Lucknow continues
+                            to strengthen public service delivery through
+                            adoption of modern digital technologies. The
+                            Lucknow Bhulekh Portal represents an important
+                            milestone in preserving valuable revenue records
+                            while making authenticated information easily
+                            accessible to citizens.
+
+                        </p>
+
+                        <p>
+
+                            Digitisation improves transparency, minimizes
+                            manual dependency, enables efficient record
+                            management and supports faster delivery of
+                            government services.
+
+                        </p>
+
+                        <p>
+
+                            This initiative reflects our commitment towards
+                            accountable governance, efficient administration
+                            and a digitally empowered district.
+
+                        </p>
+
+                        <div class="signature-box">
+
+                            <h5>
+
+                                Shri Vishak G, IAS
+
+                            </h5>
+
+                            <span>
+
+                                District Magistrate, Lucknow
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- DIGITAL INITIATIVE -->
+    <!-- ===================================================== -->
+
+    <section id="initiative" class="initiative-section py-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center mb-5">
+
+                    <span class="section-badge">
+
+                        Digital Transformation
+
+                    </span>
+
+                    <h2>
+
+                        Lucknow Bhulekh Portal
+
+                    </h2>
+
+                    <p>
+
+                        A district-level initiative for secure digital
+                        preservation of land records and seamless citizen
+                        access to authenticated information.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="vision-card">
+
+                        <div class="vision-icon">
+
+                            <i class="bi bi-shield-check"></i>
+
+                        </div>
+
+                        <h4>
+
+                            Secure Records
+
+                        </h4>
+
+                        <p>
+
+                            Digitally managed land records with enhanced
+                            integrity, preservation and controlled access.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="vision-card">
+
+                        <div class="vision-icon">
+
+                            <i class="bi bi-diagram-3"></i>
+
+                        </div>
+
+                        <h4>
+
+                            Transparency
+
+                        </h4>
+
+                        <p>
+
+                            Technology-enabled administration promoting
+                            openness, accountability and efficient governance.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="vision-card">
+
+                        <div class="vision-icon">
+
+                            <i class="bi bi-people-fill"></i>
+
+                        </div>
+
+                        <h4>
+
+                            Citizen Services
+
+                        </h4>
+
+                        <p>
+
+                            Easy access to digitised records and certified
+                            copies through a modern online platform.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- LAUNCH TIMELINE -->
+    <!-- ===================================================== -->
+
+    <section class="timeline-section py-5">
+
+        <div class="container">
+
+            <div class="section-title text-center mb-5">
+
+                <span class="section-badge">
+
+                    Milestone
+
+                </span>
+
+                <h2>
+
+                    Launch of Lucknow Bhulekh Portal
+
+                </h2>
+
+                <p>
+
+                    Officially launched by the District Administration,
+                    Lucknow on 15 April 2025.
+
+                </p>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+
+                        <i class="bi bi-lightbulb-fill"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>
+
+                            Digital Vision
+
+                        </h4>
+
+                        <p>
+
+                            Planning and conceptualization of a modern
+                            land records management platform.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+
+                        <i class="bi bi-file-earmark-richtext-fill"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>
+
+                            Record Digitisation
+
+                        </h4>
+
+                        <p>
+
+                            Large-scale scanning and preservation of
+                            historical revenue documents.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>
+
+                            15 April 2025
+
+                        </h4>
+
+                        <p>
+
+                            Launch of the Lucknow Bhulekh Portal to
+                            strengthen transparent and efficient public
+                            services through digital governance.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+
+                        <i class="bi bi-globe2"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h4>
+
+                            Citizen Access
+
+                        </h4>
+
+                        <p>
+
+                            Online availability of digitised land records
+                            and authenticated services for citizens.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- ABOUT LUCKNOW BHULEKH -->
+    <!-- ===================================================== -->
+
+    <section class="about-portal-section py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <div class="about-content">
+
+                        <span class="section-badge">
+
+                            About the Portal
+
+                        </span>
+
+                        <h2>
+
+                            Lucknow Bhulekh Digital Land Records Portal
+
+                        </h2>
+
+                        <p>
+
+                            The Lucknow Bhulekh Portal is a district-level
+                            digital initiative developed by the District
+                            Administration, Lucknow for systematic
+                            digitization, preservation and management of
+                            historical land and revenue records.
+
+                        </p>
+
+                        <p>
+
+                            The platform enables secure metadata entry,
+                            verification, record preservation and
+                            citizen-centric digital services while improving
+                            transparency and administrative efficiency.
+
+                        </p>
+
+                        <div class="portal-highlights mt-4">
+
+                            <div class="highlight-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Secure Digital Repository
+
+                            </div>
+
+                            <div class="highlight-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Metadata Based Search
+
+                            </div>
+
+                            <div class="highlight-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Role Based Verification
+
+                            </div>
+
+                            <div class="highlight-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Long Term Digital Preservation
+
+                            </div>
+
+                            <div class="highlight-item">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Citizen Friendly Services
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="about-image">
+
+                        <img src="~/images/lucknow-bhulekh-preview.jpg"
+                             class="img-fluid rounded-4 shadow-lg"
+                             alt="Lucknow Bhulekh">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- KEY OBJECTIVES -->
+    <!-- ===================================================== -->
+
+    <section class="objectives-section py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-badge">
+
+                    Objectives
+
+                </span>
+
+                <h2>
+
+                    Project Objectives
+
+                </h2>
+
+                <p>
+
+                    Supporting transparent governance through digital
+                    transformation of revenue records.
+
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3">
+
+                    <div class="objective-card">
+
+                        <i class="bi bi-cloud-upload-fill"></i>
+
+                        <h5>
+
+                            Digitisation
+
+                        </h5>
+
+                        <p>
+
+                            Preserve historical revenue records in
+                            digital format.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="objective-card">
+
+                        <i class="bi bi-search"></i>
+
+                        <h5>
+
+                            Easy Search
+
+                        </h5>
+
+                        <p>
+
+                            Quickly retrieve records using
+                            metadata-based search.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="objective-card">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <h5>
+
+                            Verification
+
+                        </h5>
+
+                        <p>
+
+                            Multi-level verification for
+                            reliable digital records.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="objective-card">
+
+                        <i class="bi bi-globe2"></i>
+
+                        <h5>
+
+                            Citizen Access
+
+                        </h5>
+
+                        <p>
+
+                            Provide convenient online
+                            public services.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SERVICES -->
+    <!-- ===================================================== -->
+
+    <section class="services-section py-5 bg-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-badge">
+
+                    Services
+
+                </span>
+
+                <h2>
+
+                    Digital Services Offered
+
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="service-card">
+
+                        <i class="bi bi-file-earmark-text-fill"></i>
+
+                        <h5>
+
+                            Digitised Revenue Records
+
+                        </h5>
+
+                        <p>
+
+                            Access scanned and indexed
+                            historical land records.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="service-card">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <h5>
+
+                            Certified Copies
+
+                        </h5>
+
+                        <p>
+
+                            Secure digitally authenticated
+                            revenue documents.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="service-card">
+
+                        <i class="bi bi-shield-lock-fill"></i>
+
+                        <h5>
+
+                            Secure Access
+
+                        </h5>
+
+                        <p>
+
+                            Protected role-based access
+                            for authorized users.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- PROJECT STATISTICS -->
+    <!-- ===================================================== -->
+
+    <section class="statistics-section py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-badge">
+
+                    Progress
+
+                </span>
+
+                <h2>
+
+                    Digital Transformation at a Glance
+
+                </h2>
+
+            </div>
+
+            <div class="row text-center">
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-card">
+
+                        <h2 class="counter"
+                            data-target="5">
+
+                            0
+
+                        </h2>
+
+                        <h6>
+
+                            Revenue Record Types
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-card">
+
+                        <h2 class="counter"
+                            data-target="1000000">
+
+                            0
+
+                        </h2>
+
+                        <h6>
+
+                            Digitised Pages (Planned)
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-card">
+
+                        <h2 class="counter"
+                            data-target="500">
+
+                            0
+
+                        </h2>
+
+                        <h6>
+
+                            Villages Covered
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <div class="stat-card">
+
+                        <h2 class="counter"
+                            data-target="24">
+
+                            0
+
+                        </h2>
+
+                        <h6>
+
+                            24×7 Digital Availability
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- PHOTO GALLERY -->
+    <!-- ===================================================== -->
+
+    <section class="gallery-section py-5 bg-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-badge">
+
+                    Gallery
+
+                </span>
+
+                <h2>
+
+                    Lucknow Bhulekh in Action
+
+                </h2>
+
+                <p>
+
+                    Highlights of digital governance, district administration
+                    initiatives and the Lucknow Bhulekh Portal.
+
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+
+                    <div class="gallery-card">
+
+                        <img src="~/images/gallery/gallery1.jpg"
+                             class="img-fluid"
+                             alt="Gallery">
+
+                        <div class="gallery-caption">
+
+                            District Administration
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="gallery-card">
+
+                        <img src="~/images/gallery/gallery2.jpg"
+                             class="img-fluid"
+                             alt="Gallery">
+
+                        <div class="gallery-caption">
+
+                            Launch Ceremony
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="gallery-card">
+
+                        <img src="~/images/gallery/gallery3.jpg"
+                             class="img-fluid"
+                             alt="Gallery">
+
+                        <div class="gallery-caption">
+
+                            Digital Land Records
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- DIGITAL WORKFLOW -->
+    <!-- ===================================================== -->
+
+    <section class="workflow-section py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-badge">
+
+                    Workflow
+
+                </span>
+
+                <h2>
+
+                    Digital Transformation Journey
+
+                </h2>
+
+            </div>
+
+            <div class="row g-4 text-center">
+
+                <div class="col">
+
+                    <div class="workflow-box">
+
+                        <i class="bi bi-folder2-open"></i>
+
+                        <h6>
+
+                            Physical Records
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col-auto align-self-center">
+
+                    <i class="bi bi-arrow-right workflow-arrow"></i>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="workflow-box">
+
+                        <i class="bi bi-camera"></i>
+
+                        <h6>
+
+                            Scanning
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col-auto align-self-center">
+
+                    <i class="bi bi-arrow-right workflow-arrow"></i>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="workflow-box">
+
+                        <i class="bi bi-pencil-square"></i>
+
+                        <h6>
+
+                            Metadata Entry
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col-auto align-self-center">
+
+                    <i class="bi bi-arrow-right workflow-arrow"></i>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="workflow-box">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <h6>
+
+                            Verification
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col-auto align-self-center">
+
+                    <i class="bi bi-arrow-right workflow-arrow"></i>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="workflow-box">
+
+                        <i class="bi bi-cloud-check-fill"></i>
+
+                        <h6>
+
+                            Digital Repository
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CITIZEN BENEFITS -->
+    <!-- ===================================================== -->
+
+    <section class="benefits-section py-5 bg-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-badge">
+
+                    Benefits
+
+                </span>
+
+                <h2>
+
+                    Benefits for Citizens
+
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="benefit-card">
+
+                        <i class="bi bi-clock-history"></i>
+
+                        <h5>
+
+                            Faster Services
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="benefit-card">
+
+                        <i class="bi bi-search"></i>
+
+                        <h5>
+
+                            Easy Search
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="benefit-card">
+
+                        <i class="bi bi-shield-check"></i>
+
+                        <h5>
+
+                            Secure Records
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="benefit-card">
+
+                        <i class="bi bi-globe2"></i>
+
+                        <h5>
+
+                            Anywhere Access
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- VISION -->
+    <!-- ===================================================== -->
+
+    <section class="vision-section py-5">
+
+        <div class="container">
+
+            <div class="vision-card">
+
+                <i class="bi bi-quote quote-big"></i>
+
+                <h2>
+
+                    Digital Governance with Transparency,
+                    Trust and Innovation
+
+                </h2>
+
+                <p>
+
+                    The Lucknow Bhulekh Portal reflects the District
+                    Administration's commitment to preserving valuable
+                    land records while delivering efficient,
+                    transparent and citizen-friendly public services
+                    through modern digital technologies.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CALL TO ACTION -->
+    <!-- ===================================================== -->
+
+    <section class="cta-section py-5">
+
+        <div class="container">
+
+            <div class="cta-card text-center">
+
+                <span class="section-badge">
+
+                    Continue
+
+                </span>
+
+                <h2>
+
+                    Experience Digital Governance
+
+                </h2>
+
+                <p>
+
+                    Enter the Lucknow Bhulekh Portal and explore
+                    the next generation of secure digital land
+                    record management.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="/Landing"
+                       class="btn btn-warning btn-lg px-5">
+
+                        <i class="bi bi-arrow-right-circle-fill me-2"></i>
+
+                        Enter Lucknow Bhulekh Portal
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer class="portal-footer">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <!-- Left -->
+
+                <div class="col-lg-5">
+
+                    <div class="footer-brand">
+
+                        <img src="~/images/up-logo.png"
+                             class="footer-logo"
+                             alt="UP Government" />
+
+                        <h4>
+
+                            Lucknow Bhulekh Portal
+
+                        </h4>
+
+                        <p>
+
+                            A Digital Initiative of the District
+                            Administration, Lucknow for secure,
+                            transparent and citizen-centric
+                            management of land records through
+                            modern digital technologies.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Links -->
+
+                <div class="col-lg-3">
+
+                    <h5>
+
+                        Useful Links
+
+                    </h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+
+                            <a href="https://lucknow.nic.in"
+                               target="_blank">
+
+                                District Administration
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="https://lucknowbhulekh.in"
+                               target="_blank">
+
+                                Lucknow Bhulekh
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="https://up.gov.in"
+                               target="_blank">
+
+                                Government of Uttar Pradesh
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="https://www.nic.in"
+                               target="_blank">
+
+                                National Informatics Centre
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="col-lg-4">
+
+                    <h5>
+
+                        Contact
+
+                    </h5>
+
+                    <p>
+
+                        <i class="bi bi-building"></i>
+
+                        District Magistrate Office
+
+                        <br />
+
+                        Lucknow, Uttar Pradesh
+
+                    </p>
+
+                    <p>
+
+                        <i class="bi bi-globe2"></i>
+
+                        www.lucknow.nic.in
+
+                    </p>
+
+                    <p>
+
+                        <i class="bi bi-envelope-fill"></i>
+
+                        support@lucknowbhulekh.in
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr class="footer-divider" />
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <p class="copyright">
+
+                        © 2026 District Administration Lucknow.
+
+                        All Rights Reserved.
+
+                        <br />
+
+                        Developed & Maintained by
+
+                        <strong>
+
+                            National Informatics Centre (NIC)
+
+                        </strong>
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <div class="social-links">
+
+                        <a href="#">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-twitter-x"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-youtube"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===================================================== -->
+    <!-- BACK TO TOP -->
+    <!-- ===================================================== -->
+
+    <button id="btnTop"
+            class="back-to-top">
+
+        <i class="bi bi-arrow-up-circle-fill"></i>
+
+    </button>
+
+    <!-- ===================================================== -->
+    <!-- SCRIPTS -->
+    <!-- ===================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/portfolio.js"></script>
+</body>
+
+</html>
